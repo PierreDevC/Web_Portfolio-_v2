@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+html,
+body {   
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 15px;
+	}
+	
+	.checkout-section {
+		margin: 120px;
+	}
+	
+	h1 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.element-container {
+  	display: flex;
+  	justify-content: center;
+ 	 align-items: center;
+ 	 flex-wrap: wrap;
+	position: relative;
+}	
+
+	.element-container2 {
+  	display: flex;
+  	justify-content: center;
+ 	 align-items: center;
+ 	 flex-wrap: wrap;
+	position: relative;
+}	
+
+	.label {
+	padding-top: 20px;
+	position: relative;
+	bottom: 5px;
+	}
+
+  /* Inputfield styling */
+  .inputfield {
+    border-radius: 10px;
+    padding: 10px 50px;
+    border: 2px solid grey;
+    outline: none;
+  }
+
+	.button1 {
+	
+	padding: 8px 38px;
+	color: black;
+	font-size: 14px;
+	border-radius: 25px;
+	border: solid black 1px;
+	background-color: white;
+	transition: transform 1s ease;
+	cursor: pointer;
+}
+
+.button1:hover {
+	transform: scale(1.01);
+	color: white;
+	background-color: black;
+}
+
+	
+	.button2 {
+	padding: 8px 38px;
+	color: white;
+	font-size: 14px;
+	border-radius: 25px;
+	border: solid black 1px;
+	background-color: black;
+	transition: transform 1s ease;
+	cursor: pointer;
+}
+
+.button2:hover {
+	transform: scale(1.01);
+	color: white;
+	background-color: black;
+}
+
+
+	
+	.shopping-cart {
+		margin: 50px;
+	}
+	
+

@@ -1,0 +1,549 @@
+@charset "utf-8";
+/* CSS Document */
+	.header-fixed {
+	background-color:white;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+	-webkit-transition:top 0.3s;
+	transition:top 0.3s;
+}
+
+.header-fixed .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*	The header placeholder. It is displayed when the header is fixed to the top of the
+	browser window, in order to prevent the content of the page from jumping up. */
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+/* Logo */
+
+.header-fixed .header-limiter h1 {
+	float: left;
+	font-family: 'Bungee';font-size: 22px;
+	line-height: 40px;
+	margin: 0;
+}
+
+
+.header-fixed .header-limiter h1 span {
+	color: #B3455B;
+}
+
+.header-fixed .header-limiter h1 span2 {
+	color: #6CDE80;
+}
+
+
+
+
+
+/* The navigation links */
+
+.header-fixed .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-fixed .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: black;
+	opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+	opacity: 1;
+	color: #B5455B;
+}
+
+.header-fixed .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Fixed version of the header */
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+	line-height: 28px;
+	font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+/*
+	 We are clearing the body's margin and padding, so that the header fits properly.
+	 We are also adding a height to demonstrate the scrolling behavior. You can remove
+	 these styles.
+ */
+
+
+
+
+.banner {
+	transition: transform 1s ease;
+	padding-bottom: 100px;
+}
+
+.banner:hover {
+	transform: scale(1.05);
+}
+
+.headersh1 {
+	color: black;
+}
+
+.line-header {
+		border-bottom: 1px solid;
+	padding-bottom: 10px; 
+	display: none;
+}
+
+
+
+
+/* Section 1 Activity Overview */
+
+.activity-overview-header {
+	padding-bottom: 50px;
+	font-size: 100px;
+}
+
+.activity-overview-text {
+	padding-bottom: 200px;
+	font-size: 18px;	
+}
+
+.activity-overview-image {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	border-radius: 15px;
+}
+
+@media (max-width:800px)
+{
+
+	.activity-overview-text {
+		padding-bottom: 50px;
+		text-align: center;
+	}
+
+	.activity-overview-image {
+		width: 450px;
+		position: relative;
+		left: 105px;
+		margin: 20px;
+	}
+	
+ 
+	
+	
+}
+
+section {
+	padding-bottom: 100px;
+}
+
+.line-section {
+	border-bottom: 1px solid;
+	margin-right: 120px;
+	margin-left: 120px;
+}
+
+@media (max-width:900px) {
+	.activity-overview-image {
+		width: 200px;
+		  text-align: center;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+	}
+	
+	
+	.line-section {
+	margin-right: 60px;
+	margin-left: 60px;	
+	}
+	
+	
+
+}
+/* Section 2 Types of Climbing */
+
+.section-header {
+	padding-bottom: 50px;
+}
+
+.element-container {
+  text-align: center;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.section-header {
+	text-align: center;
+}
+
+.type-of-climbing-image {
+	width: 300px;
+	border-radius: 20px;
+	margin: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: transform 1s ease;
+}
+
+.type-of-climbing-image:hover {
+	transform: scale(1.05);
+}
+
+.type-of-climbing-button {
+	  text-align: center;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+	.button-style {
+	border-radius: 30px;
+	padding: 8px;
+	margin: 5px;
+	color: white;
+	background-color: #B5455B;
+	border: none;
+	transition: transform 1s ease;
+		}
+		
+.button-style:hover {
+	
+	transform: scale(1.05);
+}
+	
+
+@media (max-width:800px) {
+
+	.type-of-climbing-image {
+		width: 200px;
+	}	
+}
+
+
+/* Section 3 Workouts */
+
+.basics-requirements-text {
+	text-align: left;
+	padding: 150px;
+}
+
+.basics-requirements-paragraph {
+	font-size: 18px;
+}
+
+.workouts {
+	text-align: center;
+	padding-top: 100px;
+	
+}
+
+.workout-image {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 20px;
+	margin: 10px;
+	width: 850px;
+	transition: transform 1s ease;
+	}
+
+.workout-image:hover {
+	transform: scale(1.05);
+}
+
+@media (max-width:1050px) {
+	.workout-image {
+		width: 700px;
+	}
+}
+
+@media (max-width:750px) {
+	.workout-image {
+		width: 438px;
+		position: relative;
+		right: 15px;
+	}
+	
+}
+
+.basics-requirements-text {
+	text-align: left;
+	padding: 20px;
+	
+}
+
+
+
+
+
+
+
+
+
+/* Section 4 Lessons */
+.lessons-intructor-image {
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 20px;
+}
+
+.lessons-button {
+	border-radius: 30px;
+	padding: 15px 40px 15px 40px;
+	margin: 10px;
+	color: white;
+	background-color: #B5455B;
+	border: none;
+	transition: transform 1s ease;
+	cursor: pointer
+	
+}
+
+.lessons-button:hover {
+	transform: scale(1.05)
+}
+
+
+/* Footer */
+.line-footer {
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
+	
+}
+
+.site-footer
+{
+  background-color:white;
+  padding: 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:black;
+padding-bottom: 50px
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:black;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px;
+}
+.site-footer a
+{
+  color:black;
+}
+.site-footer a:hover
+{
+  color:#B5455B;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:black;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#B5455B;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:lightgrey;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#B5455B;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#fff;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+
+
+.social-icons a.linkedin:hover
+{
+  background-color:#B5455B
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#B5455B
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}

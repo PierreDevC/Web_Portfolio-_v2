@@ -1,0 +1,469 @@
+ <!doctype html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Styles/styles-climbing-activity-gg.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" async></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+	<title>Climbing</title>
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixed.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<script>
+	    function fadeContentIn() {
+      var content = document.querySelector('.fade-in');
+      var contentTopPosition = content.getBoundingClientRect().top;
+      var screenPosition = window.innerHeight;
+
+      if (contentTopPosition < screenPosition) {
+        content.classList.add('fade-in-active');
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      setTimeout(fadeContentIn, 2000); // Delay of 2 seconds before checking scroll position
+    });
+	</script>
+	
+	
+</head>
+
+<body>
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+	  <h1><a href="index.html"><span>Gaia</span><span2>Gym</span2></a></h1>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="index.html#section-activity">Activities</a>
+			<a href="index.html#section-equipment">Equipement</a>
+			<a href="index.html#section-group-training">Group Training</a>
+		</nav>
+
+	</div>
+
+</header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+	
+	<div class="line-header"></div>
+
+	
+	
+<!-- Content -->
+ 	
+		
+	<!-- Section 1 Activity Overview-->
+	<section id="section-activity-overview">
+	 <div class="container my-5">
+		<div class="row align-content-center">
+			<div class="col-md-8 activity-overview-text">
+				<h1 class="activity-overview-header">CLIMBING</h1>
+				<h4>Activity Overview</h4>
+				<p> Climbing is an exhilarating outdoor activity that challenges both the mind and body. At Gaïa Gym, we offer a variety of climbing options for beginners and seasoned climbers alike. Whether you prefer the controlled environment of indoor climbing or the thrill of conquering natural rock formations, our gym provides the perfect setting to hone your climbing skills and build strength. </p>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid activity-overview-image" src="Images/Activities/Climbing-Activity/banner-climbing-activitiy.png" alt="1">
+		    </div>
+		</div>
+	</div>
+	</section>
+	
+	
+
+	
+	
+<!-- Section 2 Types of Climbing -->
+<section id="section-types-of-climbing">
+  <div class="element-container">
+    <h2 class="section-header">TYPES OF CLIMBING</h2>
+	  </div>
+  <div class="element-container">
+	</div>
+	
+	
+  <div class="element-container">
+    <div class="type-of-climbing">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal1">
+        <img class="type-of-climbing-image" src="Images/Activities/Climbing-Activity/climbing-activity-bouldering.png" width="350" alt="bouldering"/>
+      </a>
+      <div class="modal fade" id="imageModal1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel1">Bouldering</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Bouldering is a dynamic form of climbing on shorter routes close to the ground, focusing on technique, balance, and strength. Gaïa Gym offers diverse bouldering routes for climbers of all levels to test their limits and improve their skills.</p> <img class="type-of-climbing-image" src="Images/Activities/Climbing-Activity/climbing-activity-bouldering.png" width="350" alt="bouldering"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+  
+    <div class="type-of-climbing">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal2">
+        <img class="type-of-climbing-image" src="Images/Activities/Climbing-Activity/climbing-activity-sports-climbing.png" width="350" alt="sports climbing"/>
+      </a>
+      <div class="modal fade" id="imageModal2" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel2">Sport Climbing</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Sport climbing involves ascending designated routes on a wall or rock face with bolts for protection. It combines endurance, technique, and mental focus. Gaïa Gym provides a range of sport climbing routes, offering a safe and challenging environment for climbers to push their limits.</p><img class="type-of-climbing-image" src="Images/Activities/Climbing-Activity/climbing-activity-sports-climbing.png" width="350" alt="sports climbing"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	    <div class="type-of-climbing">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal3">
+        <img class="type-of-climbing-image" src="Images/Activities/Climbing-Activity/climbing-activity-traditionnal-climbing.png" width="350" alt="sports climbing"/>
+      </a>
+      <div class="modal fade" id="imageModal3" tabindex="-1" aria-labelledby="imageModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabel3">Traditional Climbing</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Traditional climbing, or trad climbing, is an adventurous style where climbers place their own gear into cracks and fissures for protection. Gaïa Gym offers traditional climbing lessons, guiding climbers through the skills needed for scaling natural rock formations and experiencing the thrill of the outdoors.</p> <img class="type-of-climbing-image" src="Images/Activities/Climbing-Activity/climbing-activity-traditionnal-climbing.png" width="350" alt="sports climbing"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	  
+	  
+	  
+	  
+  </div>
+</section>
+	
+	
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+	
+	<section>
+	<div class="line-section"></div>
+	</section>
+	
+	
+	
+	<!-- Section 3 Workouts -->
+	<section>
+		<div class="element-container">
+		<h2 class="section-header">WORKOUTS</h2>
+		</div>
+		
+	 <div class="container my-5">
+		<div class="row align-content-center">
+		  <div class="col-md-8 activity-overview-text">
+				<h4>Basics and requirements</h4>
+				<p class="basics-requirements-paragraph"> Climbing is an exhilarating and physically demanding outdoor activity that requires proper preparation, technique, and a deep respect for safety. Whether you are a beginner or an experienced climber, understanding the basics and meeting certain requirements is essential to ensure a safe and enjoyable climbing experience. At Gaïa Gym, we prioritize physical fitness, technique and skills, safety knowledge, risk assessment and planning, equipment and gear, and respect for the environment. <br><br> Developing a solid level of physical fitness, mastering climbing techniques, and learning safety protocols are fundamental. Additionally, climbers should assess risks, plan routes, have the appropriate equipment, and respect the natural environment. Our experienced instructors and staff are dedicated to providing a supportive and safe environment where climbers can learn, grow, and embark on thrilling adventures while adhering to these fundamentals and requirements. <br><br>  At Gaïa Gym, we understand the unique demands of rock climbing, and we have curated a list of effective workouts designed to prepare and train you for this exhilarating outdoor activity.</p>
+			</div>
+			<div class="col-md-4">
+				<img class="img-fluid activity-overview-image" src="Images/Activities/Climbing-Activity/climbing-activity-workout-bnr.png" alt="1">
+		     </div>
+		</div>
+	</div>
+		
+		<div class="container">
+			
+			<div class="workouts">
+   			<h4>Click each card to read more</h4>
+				
+				
+	    <div class="container">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalW1">
+         <img class="workout-image" src="Images/Activities/Climbing-Activity/climbing-activity-w1.png"   alt="Finger and Grip Strength Training"/> 
+      </a>
+      <div class="modal fade" id="imageModalW1" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabelW1">Finger and Grip Strength Training</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Finger and grip strength training is crucial for rock climbing, as it heavily relies on the ability to hold onto various surfaces and grips. Incorporating exercises such as finger hangs, grip trainers, forearm curls, hangboard training, and campus board training into your routine can help develop robust finger and grip strength. These exercises target the muscles and tendons in your fingers, hands, and forearms, gradually increasing strength and endurance. It is important to start with appropriate resistance and progress gradually to avoid overexertion or injury. Consulting with a qualified climbing coach or instructor can ensure proper form and technique while maximizing the benefits of finger and grip strength training for improved climbing performance.</p> 
+              <img src="Images/Activities/Climbing-Activity/climbing-modals/c1.png" width="428" height="369" alt="Finger and Grip Strength Training"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+		
+		<div class="container">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalW2">
+         <img class="workout-image" src="Images/Activities/Climbing-Activity/climbing-activity-w2.png"   alt="Finger and Grip Strength Training"/> 
+      </a>
+      <div class="modal fade" id="imageModalW2" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabelW2">Core Stability Exercices</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Core stability exercises play a crucial role in rock climbing, providing the foundation for balance, control, and efficient movement. By targeting the muscles of the core, including the abdominals, obliques, and lower back, these exercises enhance overall stability and body control during climbing movements. Incorporating exercises such as planks, Russian twists, and hanging leg raises into your workout routine can strengthen and activate the core muscles. Planks engage the entire core, promoting stability and alignment. Russian twists target the rotational muscles, essential for twisting and reaching movements while climbing. Hanging leg raises challenge the lower abs and hip flexors, improving coordination and control. Regularly integrating these core stability exercises into your training regimen at Gaïa Gym will enhance your climbing performance and contribute to a more efficient and controlled climbing experience.</p>
+			<img src="Images/Activities/Climbing-Activity/climbing-modals/c2.png" width="428" height="369" alt="Core Stability Exercices"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>		
+				
+			<div class="container">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalW3">
+         <img class="workout-image" src="Images/Activities/Climbing-Activity/climbing-activity-w3.png"   alt="Finger and Grip Strength Training"/> 
+      </a>
+      <div class="modal fade" id="imageModalW3" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabelW3">Upper Body and Shoulder Workouts</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Upper body and shoulder workouts are essential for rock climbing, as they provide the strength and stability needed to tackle challenging routes and perform dynamic movements. These exercises target the muscles of the upper body, including the back, chest, shoulders, and arms, helping climbers develop the necessary strength and endurance for various climbing techniques. Incorporating exercises such as pull-ups, push-ups, shoulder presses, and lateral raises into your training routine can effectively build upper body strength. Pull-ups target the back and arm muscles, enhancing pulling strength required for pulling yourself up on holds. Push-ups engage the chest, triceps, and shoulders, improving pushing power and stability. Shoulder presses develop shoulder strength and stability for overhead movements. Lateral raises target the deltoid muscles, promoting shoulder stability and control during climbing. By consistently integrating these upper body and shoulder workouts into your training regimen at Gaïa Gym, you'll enhance your climbing performance, improve your ability to tackle challenging routes, and achieve greater upper body strength and endurance.</p>
+			  <img src="Images/Activities/Climbing-Activity/climbing-modals/c3.png" width="428" height="369" alt="Upper Body and Shoulder Workouts"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+			<div class="container">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalW4">
+         <img class="workout-image" src="Images/Activities/Climbing-Activity/climbing-activity-w4.png"   alt="Finger and Grip Strength Training"/> 
+      </a>
+      <div class="modal fade" id="imageModalW4" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabelW4">Lower Body Strength and Plyometrics</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Lower body strength and plyometrics are crucial components of training for rock climbing, as they contribute to overall stability, power, and dynamic movement. These exercises target the muscles of the legs, including the quadriceps, hamstrings, glutes, and calves, which are essential for generating force and maintaining balance while climbing. Incorporating exercises such as squats, lunges, calf raises, and box jumps into your training routine can effectively develop lower body strength. Squats and lunges strengthen the quadriceps, hamstrings, and glutes, providing a solid foundation for pushing off and stabilizing during climbing movements. Calf raises target the calf muscles, improving lower leg strength and stability. Plyometric exercises like jump squats and box jumps enhance explosive power and dynamic movements, simulating the quick bursts of energy required during climbing. By integrating these lower body strength and plyometric exercises into your training regimen at Gaïa Gym, you'll enhance your climbing performance, increase lower body strength and power, and improve your ability to execute dynamic movements with control and precision.</p>
+			  <img src="Images/Activities/Climbing-Activity/climbing-modals/c4.png" width="428" height="369" alt="Lower Body Strength and Plyometrics"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+			<div class="container">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalW5">
+         <img class="workout-image" src="Images/Activities/Climbing-Activity/climbing-activity-w5.png"   alt="Finger and Grip Strength Training"/> 
+      </a>
+      <div class="modal fade" id="imageModalW5" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabelW5">Flexibility and Mobility Training</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Flexibility and mobility training are essential components of preparing for rock climbing, as they enhance range of motion, prevent injuries, and improve overall performance. Climbers often encounter situations that require reaching and stretching for holds in various positions, making flexibility and mobility crucial. Incorporating exercises such as dynamic stretches, yoga poses, and mobility drills into your training routine can improve flexibility and mobility. Dynamic stretches involve moving through a range of motion, promoting blood flow and warming up the muscles. Yoga poses focus on stretching and elongating the muscles, improving flexibility and balance. Mobility drills target specific joints and muscle groups, improving their range of motion and function. Paying particular attention to stretches targeting the wrists, shoulders, hips, and ankles, which are commonly used in climbing movements, can significantly enhance your climbing performance. By regularly engaging in flexibility and mobility training at Gaïa Gym, you'll increase your joint mobility, enhance your ability to reach and execute climbing moves, and reduce the risk of injuries during your climbing adventures.</p>
+			  <img src="Images/Activities/Climbing-Activity/climbing-modals/c5.png" width="428" height="369" alt="Flexibility and Mobility Training"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+				
+			<div class="container">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#imageModalW6">
+         <img class="workout-image" src="Images/Activities/Climbing-Activity/climbing-activity-w6.png"   alt="Finger and Grip Strength Training"/> 
+      </a>
+      <div class="modal fade" id="imageModalW6" tabindex="-1" aria-labelledby="imageModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="imageModalLabelW6">Endurance Training</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>Endurance training is a vital aspect of preparing for rock climbing, as it enables climbers to sustain effort over extended periods and tackle long, challenging routes with greater efficiency. Incorporating endurance training into your workout routine can improve cardiovascular fitness, muscular endurance, and mental resilience. Activities such as running, cycling, rowing, or swimming are excellent choices to enhance overall endurance. These exercises engage large muscle groups, elevate heart rate, and challenge the aerobic system. Additionally, incorporating high-intensity interval training (HIIT) can simulate the intermittent bursts of energy required during climbing, further boosting endurance. By consistently engaging in endurance training at Gaïa Gym, you'll enhance your stamina, increase your capacity to handle sustained climbing efforts, and conquer longer and more demanding routes with greater ease and confidence.</p>
+			  <img src="Images/Activities/Climbing-Activity/climbing-modals/c6.png" width="428" height="369" alt="Endurance Training"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+				
+				
+		</div>	
+			</div>
+			</section>
+	
+	<section>
+	<div class="line-section"></div>
+	</section>
+	
+	<!-- Section 4 Lessons -->
+	<section>
+		<div class="element-container">
+		<h2 class="section-header">LESSONS</h2>
+		</div>
+		
+			 <div class="container my-5">
+		<div class="row align-content-center">
+		  <div class="col-md-8 activity-overview-text">
+				<h4>Fitness Instructors</h4>
+				<p class="basics-requirements-paragraph"> Whether you're a beginner looking to learn the basics or an experienced skier aiming to refine your technique, Gaïa Gym offers comprehensive skiing lessons for all ages and skill levels. Our qualified instructors will assess your abilities, provide personalized instruction, and guide you through a structured learning program. From mastering the fundamentals to advanced techniques, our lessons focus on...</p>
+			<ul>
+			  <li>Safety</li>
+				<li>Skill development</li>
+				<li>Enhancing your enjoyment on the slopes</li>
+				
+			  </ul>
+			  <a href="group-training.html">
+			  <button class="lessons-button">Join</button></a>
+			</div>
+			<div class="col-md-4">
+				<img class="lessons-intructor-image" src="Images/Activities/Climbing-Activity/climbing-activity-coach.png" alt="instructor">
+		     </div>
+		</div>
+	</div>
+		
+		
+		
+		
+	</section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  <!-- Site footer -->
+<section><div class="line-footer"></div></section>
+	<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Gaïa Gym is an independent gym offering different solutions and services to physically prepare their subscribers for outdoor and outdoor activities. These solutions and services include facilities such as an outdoor climbing wall, a mountain bike and ski rental system as well as several group lessons with coaches specializing in the physical preparation of customers for outdoor sports such as skiing, trekking, mountaineering and mountain biking.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="index.html#section-activity">Activities</a></li>
+              <li><a href="index.html#section-equipment">Equipment</a></li>
+              <li><a href="group-training.html">Group Training</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+         <ul class="footer-links">
+              <li><a href = "mailto: pscdesignsqc@gmail.com">Contact</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="sitemap.html">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2023 All rights reserved. The GaiaGym logo is a registered trademark of 
+         <a href="index.html">Gaia Gym Ltd</a>.
+            </p>
+          </div>
+
+             <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a  class="behance" href="https://www.behance.net/pierre-cypr/projects"><i class="fa fa-behance"></i></a></li>
+              <li><a class="linkedin" href="www.linkedin.com/in/pierre-sylvestre-cypré-a5a614241"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+	
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+
+	$(document).ready(function(){
+		var showHeaderAt = 150;
+		var win = $(window),
+				body = $('body');
+		// Show the fixed header only on larger screen devices
+		if(win.width() > 400){
+			// When we scroll more than 150px down, we set the
+			// "fixed" class on the body element.
+
+			win.on('scroll', function(e){
+			if(win.scrollTop() > showHeaderAt) {
+				body.addClass('fixed');
+				}
+				else {
+					body.removeClass('fixed');
+				}
+			});
+		}
+	});
+	
+
+	// Fade-in
+  function fadeContentIn() {
+      var content = document.querySelector('.content-fade-in');
+      var contentTopPosition = content.getBoundingClientRect().top;
+      var screenPosition = window.innerHeight;
+
+      if (contentTopPosition < screenPosition) {
+        content.classList.add('fade-in-active');
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      setTimeout(fadeContentIn, 2000); // Delay of 2 seconds before checking scroll position
+    });
+
+	
+	
+	
+	
+</script>
+
+
+
+
+
+</body>
+</html>
