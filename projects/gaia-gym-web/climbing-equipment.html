@@ -30,6 +30,7 @@
 			<a href="index.html#section-activity">Activities</a>
 			<a href="index.html#section-equipment">Equipement</a>
 			<a href="index.html#section-group-training">Group Training</a>
+			<div class="btn btn-primary cart-btn" data-bs-toggle="modal" data-bs-target="#cartModal">Cart</div>
 		</nav>
 
 	</div>
@@ -56,7 +57,7 @@
 		
 		<div class="container">
 			
-		<div class="product">	
+		<div class="product" data-product-id="1">	
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-1.png" width="200" alt="Dynafit-Beast-108-Backcountry-Skis"/> 
 		<p class="product-name">Black Diamond Momentum Harness</p>
 			<p class="product-price">$99.99</p>
@@ -64,21 +65,21 @@
 <div class="notification" id="notification">Added to cart</div>
 		</div>
 		
-		<div class="product">
+		<div class="product" data-product-id="2">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-2.png" width="200" alt="Ascension Nylon Climbing Skins"/> 
 		<p class="product-name">Petzl Sama Harness</p>
 			<p class="product-price">$139.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 			</div>
 			
-		<div class="product">
+			<div class="product" data-product-id="3">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-3.png" width="200" alt="Mammut Barryvox S"/> 
 		<p class="product-name">Mammut Ophir 3 Slide Harness </p>
 			<p class="product-price">$109.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 			</div>
 			
-		<div class="product">
+			<div class="product" data-product-id="4">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-4.png" width="200" alt="Black Diamond Jetforce Airbag"/> 
 		<p class="product-name">Edelrid Jayne III Harness</p>
 			<p class="product-price">$119.99</p>
@@ -101,29 +102,29 @@
 		
 		<div class="container">
 			
-		<div class="product">	
+			<div class="product" data-product-id="5">	
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-5.png" width="200" alt="Fischer RCS Skate Skis"/> 
 		<p class="product-name">La Sportiva Tarantula Climbing Shoes</p>
-			<p class="product-price">$129.999</p>
+			<p class="product-price">$129.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 			
 		</div>
 		
-		<div class="product">
+		<div class="product" data-product-id="6">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-6.png" width="200" alt="Escape Prolink Men's Cross-country Ski Boots"/> 
 		<p class="product-name small-product-name">Five Ten Anasazi LV Climbing Shoes</p>
 			<p class="product-price">$159.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 			</div>
 			
-		<div class="product">
+			<div class="product" data-product-id="7">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-7.png" width="200" alt="Swix T74 Sport Waxing Iron"/> 
 		<p class="product-name">Scarpa Vapor V Climbing Shoes</p>
 			<p class="product-price">$179.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 			</div>
 			
-		<div class="product">
+			<div class="product" data-product-id="8">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-8.png" width="200" alt="Toko T8 Digital Waxing Iron"/> 
 		<p class="product-name">Evolv Shaman Climbing Shoes</p>
 			<p class="product-price">$189.99</p>
@@ -145,28 +146,28 @@
 		
 		<div class="container">
 			
-		<div class="product">	
+			<div class="product" data-product-id="9">	
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-9.png" width="200" alt="Black Diamond Carbon Probe Ski Poles"/> 
 		<p class="product-name small-product-name">Mammut Infinity Dry Rope (9.5mm)</p>
 			<p class="product-price">$259.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 		</div>
 		
-		<div class="product">
+		<div class="product" data-product-id="10">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-10.png" width="200" alt="G3 Alpinist+ Universal Climbing Skins"/> 
 		<p class="product-name small-product-name">Petzl Arial Dry Rope (9.5mm)</p>
 			<p class="product-price">$279.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 		  </div>
 			
-		<div class="product">
+		  <div class="product" data-product-id="11">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-11.png" width="200" alt="BCA Tracker3 Avalanche Beacon"/> 
 		<p class="product-name">Beal Joker Unicore Rope (9.1mm)</p>
 			<p class="product-price">$299.99</p>
 			<button class="add-to-cart" onclick="showNotification(this)">Add to cart</button>
 		  </div>
 			
-		<div class="product">
+		  <div class="product" data-product-id="12">
 	    <img class="product-image" src="Images/Equipment/Climbing-Equipment/CE-12.png" width="200" alt="Mammut Light Protection Airbag 3.0"/> 
 		<p class="product-name small-product-name">Sterling Evolution Velocity Rope (9.8mm)</p>
 			<p class="product-price">$209.99</p>
@@ -203,6 +204,35 @@
 	
 	</section>
 	
+		<!-- Modal for the shopping cart -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Cart items will be dynamically added here -->
+                <!-- Cart item container -->
+                <div class="cart-item">
+                    <img class="modal-product-image" src="Images/Equipment/Winter-Sports/Backcountry-Skiing/Dynafit Beast 108 Backcountry Skis.jpg" width="500px" alt="Product Image">
+                    <p class>Product Name</p>
+                    <p>$99.99</p>
+                    <!-- Set the default quantity value to 1 -->
+                    <input type="number" min="1" value="1" class="item-quantity" data-product-id="1">
+                    <p class="item-total">$99.99</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+				
+                <h6>Total: <span id="cartTotal">$0.00</span></h6>
+				<a href="checkout.html">
+                <button type="button" class="btn btn-primary btn-proceed-to-checkout">Proceed to Checkout</button></a>
+            </div>
+        </div>
+    </div>
+</div>
 	
 	
 <!-- Site footer -->
@@ -255,8 +285,9 @@
 
 	
 	
-	
+<!-- Jquery and Javascript needed -->	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/main-cart.js"></script>
 <script>
 
 	$(document).ready(function(){
@@ -324,6 +355,27 @@ addToCartBtn.addEventListener('click', () => {
     notification.classList.remove('show');
   }, 3000);
 }
+
+// Custom adding to cart js (from main-cart.js)
+
+    // Add each product to the cart modal
+    cart.forEach(item => {
+        var itemTotal = item.price * item.quantity;
+        cartTotal += itemTotal;
+
+        modalBody.append(`
+            <div class="cart-item">
+                <img src="Images/Equipment/Climbing-Equipment/CE-${item.productId}.png" width="200px" alt="${item.name}">
+                <p>${item.name}</p>
+                <p>$${item.price.toFixed(2)}</p>
+                <input type="number" min="0" value="${item.quantity}" class="item-quantity" data-product-id="${item.productId}">
+                <p class="item-total">$${itemTotal.toFixed(0)}</p>
+                <!-- Delete button with data-product-id -->
+                <button class="btn btn-danger btn-sm delete-btn delete-btn-bottom-left" data-product-id="${item.productId}">Delete</button>
+            </div>
+        `);
+    });
+
 </script>
 
 	<script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
