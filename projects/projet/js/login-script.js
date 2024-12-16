@@ -3,9 +3,7 @@
 	$(document).ready(function(){
   $("li").hide();
   })
-	
 	// Valider les identifiants
-  
   function f1() {
        // Afficher menu
        $(document).ready(function(){
@@ -18,14 +16,9 @@
 var validUser = false;
 var validPass = false;
 
-
 function validateForm() {
-
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
-
-
-
     var user = ["userName", "abc321"];
     var user1 = ["user1", "banana123"];
     var user2 = ["user2", "apple123"];
@@ -42,8 +35,6 @@ function validateForm() {
             validUser = false;
             break;
     }
-
-    
     switch (password) {
       case user[1]:
         case user1[1]:
@@ -75,10 +66,6 @@ function validateForm() {
   }
 }
 
-
-
-
-
 // Bloquer readmore si l'utilisateur n'est pas connecté
     $(document).ready(function() {
   $("#readMore").on('click', function() {
@@ -94,7 +81,6 @@ function validateForm() {
   });
 });
 
-
 function logOut() {
     let text = "Êtes vous sûr de vouloir vous déconnecter?";
     if (confirm(text) == true) {
@@ -103,8 +89,6 @@ function logOut() {
         location.reload();
     } 
 }
-
-
 
 function showDate() {
     var now = new Date();

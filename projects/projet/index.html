@@ -14,7 +14,7 @@
 </head>
 	
 	
-<body onload="f1()">
+<body>
 <!-- Barre de navigation (interne) -->
 <div class="collapse" id="navbarToggleExternalContent">
   <div class="bg-beige p-4">
@@ -29,7 +29,8 @@
         <li><a class="navbar-page" href="cart.html">Panier</a></li>
         <li><a class="navbar-page" href="checkout.html">Paiement</a></li>
       </ul>
-
+      <button class="login-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Fermer le menu</button>
+      <!-- 
       <p class="navbar-text date" id="date">Current date</p>
 
 		<h5 class="navbar-text h4 welcome">Connectez-vous pour accéder au contenu</h5>
@@ -42,6 +43,7 @@
         <input class="login-button out" type="button" onclick="logOut()" value="Se déconnecter">
 		      <button class="login-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Fermer le menu</button>
       </form> 
+      -->
     </nav>
   </div>
 </div>
@@ -77,7 +79,8 @@
 				<p style="font-size: 18px;">
 				Notre mission est de rendre accessible à tous l'héritage culturel et artistique du monde, en mettant en lumière des peintures emblématiques et des collections soigneusement sélectionnées. Explorez notre galerie en ligne pour découvrir des œuvres qui inspirent et émeuvent, et laissez-vous transporter dans un voyage artistique où chaque tableau raconte une histoire unique. Bienvenue dans l'univers envoûtant d'ArtMonde, où l'art trouve sa place dans votre monde.</p>
 				<br>
-				<button id="readMore" class="action-button">En savoir plus</button>
+        <!-- <button id="readMore" class="action-button">En savoir plus</button> -->
+        <a class="action-button" style="text-decoration: none;" href="/projects/projet/presentation.html">En savoir plus</a>
             </div>
         </div>
         <div class="col-md-6">
@@ -109,34 +112,34 @@
 <!-- Section 2 -->
 <section class="section2">
 		<h3 class="display-3 section-header">Oeuvres les plus populaires</h3> <br>
-		<p style="text-align: center">Glisser pour faire défiler le contenu</p> 
+		<p style="text-align: center">Glisser pour faire défiler le contenu et sélectionnez une oeuvre</p> 
 		
   <!-- Oeuvres les plus populaires (Swiper) -->
   <div class="swiper mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/1_anthony-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/1_anthony-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/2_flowers-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/2_flowers-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/3_self-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/3_self-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/4_ladydog-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/4_ladydog-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/5_rene-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/5_rene-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/6_george-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/6_george-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/7_painters-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/7_painters-20.jpg" alt=""/>
       </div>
       <div class="swiper-slide">
-        <img onclick="LoginLock()" src="images/art-swiper/9_boulevard-20.jpg" alt=""/>
+        <img onclick="gotoArt()" src="images/art-swiper/9_boulevard-20.jpg" alt=""/>
       </div>
     </div>
     <div class="swiper-pagination"></div>
@@ -150,16 +153,16 @@
 <h3  class="display-3 section-header">Explorez les différentes collections</h3>
 		<div class="viewer-container">
   <div class="box">
-    <img id="image1" src="images/art-hover/impressionism.jpg" width="800" alt="Gaia Gym"/> <span>IMPRESSIONISME</span>
+    <img onclick="location.href='products.html#impressionism'" id="image1" src="images/art-hover/impressionism.jpg" width="800" alt="Gaia Gym"/> <span>IMPRESSIONISME</span>
   </div>
   <div class="box">
-    <img id="image2" src="images/art-hover/post-impressionism.jpg" width="2250" alt="GQ"/> <span>POST-IMPRESSIONISME</span>
+    <img onclick="location.href='products.html#post-impressionism'" id="image2" src="images/art-hover/post-impressionism.jpg" width="2250" alt="GQ"/> <span>POST-IMPRESSIONISME</span>
   </div>
   <div class="box">
-    <img id="image3" src="images/art-hover/realism.jpg" width="2331"  alt="Soul Festival"/> <span>RÉALISME</span>
+    <img onclick="location.href='products.html#realism'" id="image3" src="images/art-hover/realism.jpg" width="2331"  alt="Soul Festival"/> <span>RÉALISME</span>
   </div>
     <div class="box">
-    <img id="image4" src="images/art-hover/renaissance.jpg" width="2331"  alt="Soul Festival"/> <span>RENAISSANCE</span>
+    <img onclick="location.href='products.html#renaissance'" id="image4" src="images/art-hover/renaissance.jpg" width="2331"  alt="Soul Festival"/> <span>RENAISSANCE</span>
   </div>
 </div> 
 </section>
@@ -190,7 +193,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/index-script.js"></script>
-<script src="js/login-script.js"></script>
+<!-- <script src="js/login-script.js"></script> -->
+
+<script>
+function gotoArt() {
+  location.href = 'mapping.html';
+}
+
+
+</script>
+
 	
 </body>
 </html>
