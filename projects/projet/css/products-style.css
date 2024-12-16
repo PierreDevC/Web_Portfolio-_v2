@@ -1,0 +1,260 @@
+/* CSS Document */
+
+
+
+	/* Navbar */
+			.bg-beige {
+		background-color: #FFF7E2;
+	}
+
+	.bg-darker-beige {
+		background-color: saddlebrown;
+	}
+
+	.img-fluid {
+		width: 600px;
+	}
+
+	.navbar {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 500;
+		transition: 0.3s;
+	}
+
+	.collapse {
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 1020;
+	}
+
+
+	.navbar-page {
+		color: saddlebrown;
+		padding: 6px;
+		transition: 0.3s;
+		border-radius: 20px;
+	}
+
+	.navbar-page:hover {
+		background-color: saddlebrown;
+		color: white;
+	}
+
+	.navbar-text {
+		color: saddlebrown;
+	}
+
+/* Types de boutons */
+	.button1 {
+		border-radius : 20px;
+		padding: 10px;
+		background-color: saddlebrown;
+		color: white;
+		border: none;
+	}
+
+	.remove-from-cart {
+		border-radius : 20px;
+		padding: 10px;
+		background-color: saddlebrown;
+		color: white;
+		border: none;
+	}
+
+	.checkout-button {
+		border-radius : 20px;
+		padding: 8px;
+		background-color: saddlebrown;
+		color: white;
+		border: none;
+	}
+
+.increase-quantity {
+	padding: 2px;
+	margin: 5px;
+	background-color: saddlebrown;
+	color: white;
+	border: none;
+	border-radius: 20px;
+}
+
+.decrease-quantity {
+	padding: 2px;
+	margin: 5px;
+	background-color: saddlebrown;
+	color: white;
+	border: none;
+	border-radius: 20px;
+}
+
+
+
+/* Types de texte */
+
+h1 {
+	font-family: 'Boska-BoldItalic';
+	font-size: 70px;
+	color: saddlebrown;
+}
+
+p {
+	font-size: 15px;
+}
+
+
+@font-face {
+font-family: 'Boska-BoldItalic';
+src: url('../fonts/Boska-BoldItalic.woff2') format('woff2'),
+url('../fonts/Boska-BoldItalic.woff') format('woff'),
+url('../fonts/Boska-BoldItalic.ttf') format('truetype');
+font-weight: 700;
+font-display: swap;
+font-style: italic;
+}
+
+
+.mapping-img {
+	box-shadow: 5px 5px 15px 4px;
+}
+
+
+/* Divider */
+
+.divider {
+		border-bottom: 1px solid;
+	}
+
+	.right {
+		float: right;
+	}
+
+	.divider.col {
+		padding: 40px;
+
+	}
+
+	.selection {
+		padding-top: 20px;
+		transition: 0.5s;
+		height: 400px;
+
+	}
+
+
+
+	.selection img {
+		padding: 50px;
+		float: right;
+		width: 300px;
+		transition: transform .2s;
+	}
+
+	.selection img:hover {
+		transform: scale(1.2);
+	}
+
+	.selection a {
+		text-decoration: none;
+	}
+
+	.selection a:hover {
+		color: black;
+	}
+
+	@media only screen and (max-width: 800px) {
+		.selection {
+		height: 500px;
+	}
+		
+}
+
+
+.product-image {
+	width: 300px;
+	transition: transform .2s;
+	cursor:pointer;
+}
+
+.product-image:hover {
+	transform: scale(1.01);
+}
+
+
+.cart-button-style {
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 150px;
+	border-radius : 20px;
+	padding: 8px 12px 8px 12px;
+	background-color: saddlebrown;
+	color: white;
+	border: none;
+	float: right;
+}
+
+section {
+    margin-bottom: 120px;
+}
+
+.product {
+  height: 600px;
+}
+
+
+/* Notification ajouter au panier */
+#toast {
+  visibility: hidden;
+  height: 50px;
+  width: fit-content;
+  margin: auto;
+  background-color: saddlebrown;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  z-index: 1040;
+  left: 0;
+  right: 0;
+  top: 30px;
+  font-size: 17px;
+  white-space: nowrap;
+  z-index: 100;
+}
+
+#toast #desc {
+  color: #fff;
+  padding: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 1s, fadeout 1s 3s;
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1
+  }
+}
+
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
+

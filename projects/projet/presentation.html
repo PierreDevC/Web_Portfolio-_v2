@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ArtMonde</title>
+		
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/presentation-style.css"> 
+	
+</head>
+<body>
+
+<!-- Barre de navigation (étendue)-->
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-beige p-4">
+    <h5 class="navbar-text h4">Explorez notre site web</h5>
+    <nav id="nav">
+      <ul>
+        <li><a class="navbar-page" href="index.html">Acceuil</a></li>
+        <li><a class="navbar-page" href="presentation.html">Présentation d'ArtMonde</a></li>
+        <li><a class="navbar-page" href="mapping.html">Mur d'oeuvres</a></li>
+        <li><a class="navbar-page" href="search.html">Recherche</a></li>
+        <li><a class="navbar-page" href="products.html">Oeuvres d'art</a></li>
+        <li><a class="navbar-page" href="cart.html">Panier</a></li>
+        <li><a class="navbar-page" href="checkout.html">Paiement</a></li>
+      </ul>
+      <p class="navbar-text" id="date"></p>
+      <form id="loginForm" action="/action_page.php">
+        <input class="button1" type="button" onclick="logOut()" value="Se déconnecter">
+		      <button class="button1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Fermer le menu</button>
+      </form> 
+    </nav>
+  </div>
+</div>
+
+<!-- Barre de navigation (non-étendue)-->
+<nav class="navbar navbar-dark bg-beige">
+  <div class="container-fluid">
+    <button class="navbar-toggler bg-darker-beige" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-darker-beige"></span>
+    </button>
+	  <img style="width: 200px" src="images/logo_artmonde.png" alt="logo">
+  </div>
+</nav>
+
+<!-- Contenu-->
+<section class="background">
+	<div class="scrolling-wrapper">
+		<div class="horizontal-scrolling-items">
+	  
+		<div class="horizontal-scrolling-items__item">
+		  Explorez le monde à travers l'art.
+		  Découvrez les chefs-d'œuvre classiques et modernes.
+		  Voyagez dans le temps et l'espace avec chaque toile.
+		  Embellissez votre monde avec des œuvres d'art exceptionnelles.
+		  Votre galerie d'art personnelle à portée de clic.
+		  Plongez dans l'univers des couleurs, des formes et des émotions.
+		  </div>
+		</div>
+	  </div>
+
+
+<!-- Présentation (Header) -->
+  <div class="container my-5">
+	<div class="row align-items-center">
+		<div class="col-md-6">
+			<div class="my-5 p-3 background-styling">
+			<h2>Présentation</h2>
+			<h2>de la gallerie</h2>
+			<h1>ArtMonde</h1>
+			<p>Explorez le monde à travers l'art, découvrez les chefs-d'œuvre classiques et modernes, et voyagez dans le temps avec chaque toile. 
+				Embellissez votre monde avec des œuvres d'art exceptionnelles, disponibles dans votre galerie d'art personnelle à portée de clic. 
+				Plongez dans un univers de couleurs et d'émotions, où les trésors artistiques du monde entier sont livrés à votre porte. 
+				Chez ArtMonde, connectez-vous aux meilleurs artistes du monde et découvrez l'art, une langue universelle qui parle à l'âme.</p>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="my-5 p-2 text-center">
+				<div class="col"><img class="background-img" src="images/img-presentation-background.png" alt=""></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</section>
+
+
+<!-- Section 1 -->
+<section id="section1" class="section1">
+	<div class="container my-5">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<div class="my-5 p-3">
+					<h3 class="display-3" style="color: #964B00; font-family: 'Boska-BoldItalic';">Notre histoire</h3>
+					<p>ArtMonde a commencé comme une idée simple : rendre l'art accessible à tous, peu importe où ils se trouvent dans le monde.
+						Fondé en 2010 par un groupe d'amateurs d'art visionnaires, le site voulait combler le fossé entre les amateurs d'art 
+						et les chefs-d'œuvre qu'ils aiment, sans les contraintes de la géographie ou du temps.
+						Au cours de la dernière décennie, ArtMonde a évolué pour devenir bien plus qu'un simple détaillant d'art.
+						Aujourd'hui, nous sommes une communauté mondiale d'artistes, de collectionneurs, de conservateurs et d'amateurs d'art, 
+						tous unis par notre amour de l'art et notre désir de le partager. </p>	
+				</div>
+			</div>
+	
+			<div class="col-md-6">
+				<div class="my-5 p-2 text-center">
+				   <img style="max-width: 400px;" src="images/img-histoire.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+<!-- Section 2 -->
+<section class="section2">
+	<div class="container">
+		<div class="row">
+		  <div class="col">
+			<img id="selection-img" width="250px" src="images/img-bazille.jpg" alt="">
+		  </div>
+		  <div class="col">
+			
+			<div class="container">
+				<div class="row row-cols-1">
+					<div class="divider"></div>
+				  <div id="selection1" class="col selection"><h6>Frederick Sandys</h6> Medée <br> 1868 <p class="right">la plus jeune des Océanides &#8594;</p> </div>
+				  <div class="divider"></div>
+				  <div id="selection2" class="col selection" ><h6>Simon Willem Maris</h6> Isabella <br> 1906 <p class="right">la plus jeune des Océanides &#8594;</p> </div>
+				  <div class="divider"></div>
+				  <div id="selection3" class="col selection"><h6>Jan Davidsz de Heem</h6> Vase of Flowers <br> 1670 <p class="right">explosion florale &#8594;</p> </div>
+				  <div class="divider"></div>
+				  <div id="selection4" class="col selection"><h6>Samuel Prout</h6>Interior Of A Cathedral <br> 1783-1852 <p class="right">des vues pittoresques et des merveilles architecturales de l’Italie &#8594;</p> </div>
+				  <div class="divider"></div>
+				  <div id="selection5" class="col selection"><h6>Dante Gabriel Rossetti</h6> Proserpine <br> 1874-1822 <p class="right">« Malheur à toi, malheureuse Proserpine » &#8594;</p> </div>
+				  <div class="divider"></div>
+				</div>
+			  </div>
+		  </div>
+		</div>
+	  </div>
+</section>
+
+	
+<!-- Section 3 -->
+<section id="section3" class="section3">
+	<div class="container my-5">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<div class="my-5 p-3">
+					<a href="https://en.wikipedia.org/wiki/Medea_%28Sandys_painting%29" target="_blank">
+						<img class="presentation-img" src="images/img-medee.png" alt="">
+					</a>
+					
+				</div>
+			</div>
+	
+			<div class="col-md-6">
+				<div class="my-5 p-2">
+						<p>Médée est une peinture à l'huile sur toile de 1868 du peintre préraphaélite Frederick Sandys. Le tableau a été soumis à la Royal Academy of Arts pour être exposé lors de l'exposition d'été de 1868, mais il a été rejeté – probablement pour des raisons de politique interne et de jalousie plutôt que pour des raisons artistiques.</p>		   
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+<!-- Section 4 -->
+</section>
+<section id="section4" class="section4">
+	<div class="container my-5">
+		<div class="row align-items-center">
+			<div class="col-md-6">
+				<div class="my-5 p-3">
+					<p>L'œuvre mesure 41 x 29 cm et est composée de peinture à l'huile sur toile. Le portrait montre une jeune fille de douze ans connue uniquement sous le nom d'Isabella, posant dans le studio de Maris au 498 Keizersgracht, à Amsterdam. Elle est assise dans un fauteuil rembourré en bois, avec des têtes de chèvre sculptées dans les accoudoirs. Le sujet tient un éventail dans sa main droite et sa main gauche touche le pompon doré de l'éventail. Son bras gauche est orné d'un bracelet en or et son annulaire arbore une bague en or. Elle porte une « somptueuse » robe bleue et verte, et un bonnet blanc et rouge sur la tête. En arrière-plan, on peut voir un miroir dévoilant son reflet, mettant en valeur l'arrière du bonnet et de la robe.</p>
+				</div>
+			</div>
+	
+			<div class="col-md-6">
+				<div class="my-5 p-2">
+					<a href="https://en.wikipedia.org/wiki/Isabella_(painting)#" target="_blank">
+					<img class="presentation-img" src="images/img-isabella.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+<!-- Section 5 -->
+<section id="section5" class="section5">
+	<div class="container">
+		<div class="row">
+		  <div class="col">
+			<a href="https://www.mauritshuis.nl/en/our-collection/artworks/1099-vase-of-flowers/" target="_blank">
+			<img class="presentation-img" style="max-width: 300px; border-top-right-radius: 50px;" src="images/img-flowers.jpg" alt="">
+			</a>
+			<h6 style="color: #964B00; padding-top:10px;">Vase of Flowers (1670)<br>Jan Davidsz de Heem </h6>
+			<p class="presentation-img" style="max-width: 300px;">Comparé aux natures mortes de fleurs du début du XVIIe siècle, ce tableau est une véritable explosion florale. Plutôt qu’un bouquet rigide, on voit une profusion colorée de fleurs suspendues au bord du vase.</p>
+		  </div>
+		  <div class="col">
+			<a href="https://en.wikipedia.org/wiki/Jan_Davidsz._de_Heem" target="_blank">
+			<img class="presentation-img" style="max-width: 300px; border-top-left-radius: 150px; border-top-right-radius: 150px;" src="images/img-cathedral.jpg" alt="">
+			</a>
+			<h6 style="color: #964B00; padding-top:10px;">Interior Of A Cathedral (1783-1852)<br>Jan Davidsz de Heem </h6>
+			<p style=" max-width: 300px;">Les aquarelles de Samuel Prout représentant des vues pittoresques et des merveilles architecturales de l’Italie, de la France, de l’Allemagne et de la Suisse ont attiré un large public, ont contribué à inspirer les voyages et ont façonné la perception anglaise de l’Europe continentale.</p>
+		  </div>
+		  <div class="col">
+			<a href="https://en.wikipedia.org/wiki/Proserpine_(Rossetti)" target="_blank">
+			<img class="presentation-img" style="max-width: 300px; border-top-left-radius: 100px;" src="images/img-prosperine.jpg" alt="">
+			</a>
+			<h6 style="color: #964B00; padding-top:10px;">Proserpine (1874 - 1822)<br>Dante Gabriel Rossetti</h6>
+			<p style=" max-width: 300px;">Au loin, la lumière qui apporte une joie froide
+				Vers ce mur, – un instant et pas plus
+				Admis à la porte de mon palais lointain
+				Au loin les fleurs d'Enna de cette morne
+				Fruit terrible qui, goûté une fois, doit me captiver ici.
+				Au loin ces cieux de ce gris tartare
+				Cela me glace : et loin, combien loin,
+				Les nuits qui deviendront les jours qui furent.
+				Je semble être loin de moi-même, et je m'envole
+				Étranges façons de penser, et écoutez un signe :
+				Et pourtant, un cœur à une âme se languit,
+				(Dont mon sens intérieur veut apporter les sons,
+				Continuellement ensemble, murmurant) —
+				« Malheur à toi, malheureuse Proserpine ».
+				— D.G. Rossetti</p>
+		  </div>
+		</div>
+	  </div>
+</section>
+
+
+<!-- Footer-->
+<footer class="bg-beige py-5 mt-5">
+	<div class="container text-center">
+	<p class="display-5 mb-3">ArtMonde</p>
+	<small>&copy; Copyright by ArtMonde. All rights reserved</small>
+	</div>
+</footer>
+
+	
+<!-- JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/presentation-script.js"></script>
+
+</body>
+</html>

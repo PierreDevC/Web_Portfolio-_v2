@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ArtMonde</title>
+		<!-- CSS Général -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+	<script src="login-script.js"></script>
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+	
+	<style>	
+
+
+		/* Navbar */
+				.bg-beige {
+			background-color: #FFF7E2;
+		}
+		
+		.bg-darker-beige {
+			background-color: saddlebrown;
+		}
+		
+		.img-fluid {
+			width: 600px;
+		}
+		
+		.navbar {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			z-index: 500;
+			transition: 0.3s;
+		}
+		
+		.collapse {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			z-index: 1020;
+		}
+
+		
+		.navbar-page {
+			color: saddlebrown;
+			padding: 6px;
+			transition: 0.3s;
+			border-radius: 20px;
+		}
+		
+		.navbar-page:hover {
+			background-color: saddlebrown;
+			color: white;
+		}
+			
+		.navbar-text {
+			color: saddlebrown;
+		}
+		
+    /* Types de boutons */
+		.button1 {
+			border-radius : 20px;
+			padding: 10px;
+			background-color: saddlebrown;
+			color: white;
+			border: none;
+		}
+
+/* Types de texte */
+
+h1 {
+	font-family: 'Boska-BoldItalic';
+	font-size: 150px;
+	color: saddlebrown;
+}
+
+p {
+	font-size: 15px;
+}
+
+
+		@font-face {
+  font-family: 'Boska-BoldItalic';
+  src: url('../fonts/Boska-BoldItalic.woff2') format('woff2'),
+       url('../fonts/Boska-BoldItalic.woff') format('woff'),
+       url('../fonts/Boska-BoldItalic.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: italic;
+}
+
+
+.mapping-img {
+	box-shadow: 5px 5px 15px 4px;
+}
+
+
+/* Divider */
+
+.divider {
+            border-bottom: 1px solid;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .divider.col {
+            padding: 40px;
+
+        }
+        
+		.selection {
+			padding-top: 20px;
+			transition: 0.5s;
+			height: 400px;
+			
+		}
+		
+
+
+		.selection img {
+			padding: 50px;
+			float: right;
+			width: 300px;
+			transition: transform .2s;
+		}
+
+		.selection img:hover {
+			transform: scale(1.2);
+		}
+
+		.selection a {
+			text-decoration: none;
+		}
+
+		.selection a:hover {
+			color: black;
+		}
+
+		@media only screen and (max-width: 800px) {
+			.selection {
+			height: 500px;
+		}
+		
+}
+
+   /* Scrolling text */
+
+   .scrolling-wrapper {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+	overflow: hidden;
+}
+
+  .horizontal-scrolling-items {
+    display: flex;
+    font-size: 40px; 
+
+  }
+
+.horizontal-scrolling-items__item {
+white-space: nowrap;
+font-family: Arial, Helvetica, sans-serif;
+padding: 5px;
+}
+
+@keyframes infiniteScroll {
+  from {transform: translateX(0) }
+  to {transform: translateX(calc(0px - 100%));}
+}
+.horizontal-scrolling-items {
+  animation-name: infiniteScroll;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+
+
+	</style>
+	
+</head>
+<body>
+
+<!-- Barre de navigation (étendue)-->
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-beige p-4">
+    <h5 class="navbar-text h4">Explorez notre site web</h5>
+    <nav id="nav">
+      <ul>
+        <li><a class="navbar-page" href="index.html">Acceuil</a></li>
+        <li><a class="navbar-page" href="presentation.html">Présentation d'ArtMonde</a></li>
+        <li><a class="navbar-page" href="mapping.html">Mur d'oeuvres</a></li>
+        <li><a class="navbar-page" href="search.html">Recherche</a></li>
+        <li><a class="navbar-page" href="products.html">Oeuvres d'art</a></li>
+        <li><a class="navbar-page" href="cart.html">Panier</a></li>
+        <li><a class="navbar-page" href="checkout.html">Paiement</a></li>
+      </ul>
+
+      <p class="navbar-text" id="date"></p>
+
+      <form id="loginForm" action="/action_page.php">
+        <input class="button1" type="button" onclick="logOut()" value="Se déconnecter">
+		      <button class="button1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Fermer le menu</button>
+		  
+      </form> 
+    </nav>
+  </div>
+</div>
+
+<!-- Barre de navigation (non-étendue)-->
+<nav class="navbar navbar-dark bg-beige">
+  <div class="container-fluid">
+    <button class="navbar-toggler bg-darker-beige" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-darker-beige"></span>
+    </button>
+	  <img style="width: 200px" src="images/logo_artmonde.png" alt="logo">
+  </div>
+</nav>
+
+<!-- Contenu-->
+	<div class="scrolling-wrapper">
+		<div class="horizontal-scrolling-items">
+	  
+		<div class="horizontal-scrolling-items__item">
+		  Explorez le monde à travers l'art.
+		  Découvrez les chefs-d'œuvre classiques et modernes.
+		  Voyagez dans le temps et l'espace avec chaque toile.
+		  Embellissez votre monde avec des œuvres d'art exceptionnelles.
+		  Votre galerie d'art personnelle à portée de clic.
+		  Plongez dans l'univers des couleurs, des formes et des émotions.
+		  </div>
+	  
+		</div>
+	  </div>
+
+
+	  
+
+<div class="container">
+	<div class="row align-items-center">
+	  <div class="col text-center">
+		<h1>Oeuvres d’art</h1>
+		<h6>Cliquez sur une peinture pour afficher ses détails</h6>
+		<br>
+		</div>
+	</div>
+  </div>
+
+  <div class="text-center">
+	<img class="mapping-img" id="img-map-1" usemap="#mapping" src="images/img-mapping-full.jpg" alt="mapping">
+
+	<map name="mapping">
+		<area shape="rect" coords="50,45,203,246" alt="Image1" href="mapping.html#img-map-1">
+		<area shape="rect" coords="223,45,376,244" alt="Image2" href="mapping.html#img-map-2">
+		<area shape="rect" coords="398,44,553,243" alt="Image3" href="mapping.html#img-map-3">
+		<area shape="rect" coords="46,263,202,465" alt="Image4" href="mapping.html#img-map-4">
+		<area shape="rect" coords="221,263,376,466" alt="Image5" href="mapping.html#img-map-5">
+		<area shape="rect" coords="395,262,552,464" alt="Image6" href="mapping.html#img-map-6">
+		<area shape="rect" coords="45,485,204,691" alt="Image7" href="mapping.html#img-map-7">
+		<area shape="rect" coords="221,485,378,691" alt="Image8" href="mapping.html#img-map-8">
+		<area shape="rect" coords="396,485,558,691" alt="Image9" href="mapping.html#img-map-9">
+	  </map>
+
+  </div>
+
+<section style="margin-top: 150px;">
+
+
+
+  <div class="container">
+	<div class="row row-cols-2">
+		<!-- Image 1 -->
+		<div class="divider" id="img-map-2"></div> <div class="divider"></div>
+	  <div class="col selection">
+		<h5>Antony Valabrègue , 1866</h5>
+		<h6>Paul Cézanne</h6>
+		<p>Travaillant avec diligence pour trouver sa voix artistique au cours de la première décennie de sa 
+			carrière, Cézanne a souvent convaincu ses amis et ses proches de lui servir de modèles dans son 
+			atelier du domaine familial à Aix-en-Provence. Le poète et historien de l'art Antony Valabrègue, 
+			qui a grandi avec Cézanne à Aix, a posé à plusieurs reprises pour le jeune artiste dans les années 1860.</p>
+		<a href="https://www.nga.gov/collection/art-object-page.52389.html" target="_blank" class="button1">En savoir plus</a>
+	</div>
+	<div class="col selection">
+		<a href="https://www.nga.gov/collection/art-object-page.52389.html" target="_blank"><img src="images/img-mapping/img-mapping-1.jpg"></a>
+	</div>
+	 <div class="divider"></div> <div class="divider"></div>
+			<!-- Image 2 -->
+			<div id="img-map-3" class="col selection">
+				<h5>René de Gas, 1855</h5>
+				<h6>Edgar Degas</h6>
+				<p>« René nous racontait qu'à peine avait-il posé ses livres en rentrant de l'école qu'Edgar l'attrapait et le faisait poser »
+					Paul-André Lemoisne, 1931. Ce portrait du plus jeune frère d'Edgar, René, 10 ans, a été peint en 1855. Les membres de la famille de Degas étaient ses principaux modèles dans ses premières années et René était l'un de ses modèles préférés.</p>
+					<a href="https://www.nga.gov/collection/art-object-page.92995.html" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://www.nga.gov/collection/art-object-page.92995.html" target="_blank"><img src="images/img-mapping/img-mapping-2.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 3 -->
+			<div id="img-map-4" class="col selection">
+				<h5>Isabella , 1906</h5>
+				<h6>Simon Willem Maris</h6>
+				<p>L'œuvre mesure 41 par 29 cm et est composée de peinture à l'huile sur toile. 
+					Le portrait montre une fillette de douze ans connue seulement sous le nom 
+					d'Isabella, posant dans l'atelier de Maris au 498 Keizersgracht, Amsterdam. 
+					Elle est assise dans un fauteuil en bois matelassé, avec des têtes de chèvre 
+					sculptées dans les accoudoirs. Le sujet tient un éventail dans sa main droite, 
+					et sa main gauche touche le gland doré de l'éventail.</p>
+					<a href="https://en.wikipedia.org/wiki/Isabella_(painting)" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://en.wikipedia.org/wiki/Isabella_(painting)" target="_blank"><img src="images/img-mapping/img-mapping-3.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 4 -->
+			<div id="img-map-5" class="col selection">
+				<h5>Médée, 1868</h5>
+				<h6>Frederick Sandys</h6>
+				<p>Medée est une peinture à l'huile sur toile de 1868 par le peintre préraphaélite Frederick Sandys. La peinture a été soumise à la Royal Academy of Arts pour être exposée lors de l'Exposition d'été de 1868 mais elle a été rejetée - très probablement pour des raisons de politique interne et de jalousies plutôt que pour des raisons artistiques. L'œuvre a été acceptée l'année suivante et a été très favorablement critiquée par The Times, qui a commenté de manière pointue son échec précédent à obtenir une place.</p>
+				<a href="https://artuk.org/discover/stories/representing-medea-the-tale-of-a-mythical-murderess" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://artuk.org/discover/stories/representing-medea-the-tale-of-a-mythical-murderess" target="_blank"><img src="images/img-mapping/img-mapping-4.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 5 -->
+			<div id="img-map-6" class="col selection">
+				<h5>Auguste Renoir, 1872</h5>
+				<h6>Claude Monet</h6>
+				<p>Avec des manipulations intuitives et émotionnelles de la couleur et un vocabulaire étendu de coups de pinceau courts, rapides et lâches, Pierre-Auguste Renoir a contribué au pionnier de l'école de peinture impressionniste. Avec son ami Claude Monet, il privilégie la spontanéité et la particularité de la lumière aux techniques artistiques traditionnelles.</p>
+				<a href="https://www.artsy.net/artwork/pierre-auguste-renoir-claude-monet" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://www.artsy.net/artwork/pierre-auguste-renoir-claude-monet" target="_blank"><img src="images/img-mapping/img-mapping-5.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 6 -->
+			<div id="img-map-7" class="col selection">
+				<h5>Au Moulin Rouge, 1892–1895</h5>
+				<h6>Paul Cézanne</h6>
+				<p>Henri de Toulouse-Lautrec est associé au Moulin Rouge depuis son ouverture en 1889 : le propriétaire de la légendaire discothèque a acheté l'Equestrienne de l'artiste pour décorer le hall. Toulouse-Lautrec a peuplé Au Moulin Rouge de portraits des habitués de la légendaire boîte de nuit, dont lui-même - le petit personnage au centre de l'arrière-plan - accompagné de son cousin, le médecin Gabriel Tapié de Céleyran.</p>
+				<a href="https://www.artic.edu/artworks/61128/at-the-moulin-rouge" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://www.artic.edu/artworks/61128/at-the-moulin-rouge" target="_blank"><img src="images/img-mapping/img-mapping-6.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 7 -->
+			<div id="img-map-8" class="col selection">
+				<h5>Salvador Mundi , 1490–1500</h5>
+				<h6>Leonardo da Vinci</h6>
+				<p>Le tableau représente le Christ comme le Sauveur du monde. Il est représenté en costume Renaissance, avec deux doigts tendus alors qu'il donne une bénédiction. Dans sa main gauche, il tient un orbe de cristal, qui représente la sphère cristalline du ciel, faisant allusion à son rôle de maître du cosmos.</p>
+				<a href="https://en.wikipedia.org/wiki/Salvator_Mundi_(Leonardo)" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://en.wikipedia.org/wiki/Salvator_Mundi_(Leonardo)" target="_blank"><img src="images/img-mapping/img-mapping-7.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 8 -->
+			<div id="img-map-9" class="col selection">
+				<h5>Martyrdom of Saint Margaret , 1608 - 1611</h5>
+				<h6>Giuseppe Cesari</h6>
+				<p>**Le Martyre de Sainte Marguerite**, peint par **Giuseppe Cesari**, également connu sous le nom de **Cavaliere d’Arpino**, est une œuvre d’art captivante. Réalisée vers **1608-1611**, cette peinture à l’huile représente le moment dramatique du martyre de Sainte Marguerite. La composition saisit habilement la tension et l’émotion alors que la sainte fait face à son destin.</p>
+					<a href="https://www.britannica.com/biography/Cavaliere-DArpino" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://www.britannica.com/biography/Cavaliere-DArpino" target="_blank"><img src="images/img-mapping/img-mapping-8.jpg"></a>
+			</div>
+			<div class="divider"></div> <div class="divider"></div>
+			<!-- Image 9 -->
+			<div id="img-map-9" class="col selection">
+				<h5>Abraham Lincoln , 1860</h5>
+				<h6>George Peter Alexander Healy</h6>
+				<p>**George Peter Alexander Healy** (1813–1894) était un **portraitiste américain** renommé de son époque. Né à Boston, Healy a étudié en Europe et a maintenu des ateliers à Paris tout au long de sa vie.
+
+				L’une de ses œuvres les plus remarquables est le **portrait d’Abraham Lincoln**, le 16e président des États-Unis. Réalisé en **1869**, ce tableau à l’huile sur toile capture un Lincoln pensif.</p>
+					<a href="https://www.nga.gov/collection/art-object-page.166453.html" target="_blank" class="button1">En savoir plus</a>
+			</div>
+			<div class="col selection">
+				<a href="https://www.nga.gov/collection/art-object-page.166453.html" target="_blank"><img src="images/img-mapping/img-mapping-9.jpg"></a>
+			</div>
+	</div>
+  </div>
+
+</section>
+<!-- JavaScript-->
+
+<script>
+
+// Création de l'objet de date
+var now = new Date();
+var hours = now.getHours();
+var minutes = now.getMinutes();
+document.getElementById('date').innerHTML = now.toDateString() + ", " + hours + ":" + minutes;
+
+</script>
+
+
+<!-- Footer-->
+<footer class="bg-beige py-5 mt-5">
+	<div class="container text-center">
+	<p class="display-5 mb-3">ArtMonde</p>
+	<small>&copy; Copyright by ArtMonde. All rights reserved</small>
+	</div>
+</footer>
+	
+</body>
+</html>

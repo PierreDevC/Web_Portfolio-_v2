@@ -1,0 +1,108 @@
+		/* Navbar */
+		.bg-beige {
+			background-color: #FFF7E2;
+		}
+		
+		.bg-darker-beige {
+			background-color: saddlebrown;
+		}
+		
+		.img-fluid {
+			width: 600px;
+		}
+		
+		.navbar {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			z-index: 500;
+			transition: 0.3s;
+		}
+		
+		.collapse {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+			z-index: 1020;
+		}
+
+		
+		.navbar-page {
+			color: saddlebrown;
+			padding: 6px;
+			transition: 0.3s;
+			border-radius: 20px;
+		}
+		
+		.navbar-page:hover {
+			background-color: saddlebrown;
+			color: white;
+		}
+			
+		.navbar-text {
+			color: saddlebrown;
+		}
+		
+		@font-face {
+		font-family: 'Boska-BoldItalic';
+		src: url('../fonts/Boska-BoldItalic.woff2') format('woff2'),
+		url('../fonts/Boska-BoldItalic.woff') format('woff'),
+		url('../fonts/Boska-BoldItalic.ttf') format('truetype');
+		font-weight: 700;
+		font-display: swap;
+		font-style: italic;
+		}
+
+		h1 {
+	font-family: 'Boska-BoldItalic';
+	font-size: 70px;
+	color: saddlebrown;
+}
+		
+		.search-form {
+			margin: 100px;
+		}
+		
+		
+    	/* Types de boutons */
+		
+		.search-label {
+			font-size: 20px;		
+		}
+		
+		.button1 {
+			border-radius : 20px;
+			padding: 10px;
+			background-color: saddlebrown;
+			color: white;
+			border: none;
+		}
+
+		.button2 {
+		border-radius : 30px;
+		padding: 20px;
+		background-color: saddlebrown;
+		color: white;
+		border: none;
+		font-size: 20px;
+	}
+
+
+
+		
+		.search-bar {
+			margin: 20px;
+			border-radius: 30px;
+			border: 2px solid saddlebrown;
+			padding: 10px;
+		}
+
+		.checkout-info {
+			text-align: left;
+		}
+
+
+		.bill {
+		margin: 5px;
+		}
+

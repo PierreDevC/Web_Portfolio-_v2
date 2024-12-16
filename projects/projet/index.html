@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ArtMonde</title>
+	
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- CSS (CSS et Swiper) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="stylesheet" href="css/style.css"> 
+</head>
+	
+	
+<body onload="f1()">
+<!-- Barre de navigation (interne) -->
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-beige p-4">
+    <h5 class="navbar-text h4">Explorez notre site web</h5>
+    <nav id="nav">
+      <ul>
+        <li><a class="navbar-page" href="index.html">Acceuil</a></li>
+        <li><a class="navbar-page" href="presentation.html">Présentation d'ArtMonde</a></li>
+        <li><a class="navbar-page" href="mapping.html">Mur d'oeuvres</a></li>
+        <li><a class="navbar-page" href="search.html">Recherche</a></li>
+        <li><a class="navbar-page" href="products.html">Oeuvres d'art</a></li>
+        <li><a class="navbar-page" href="cart.html">Panier</a></li>
+        <li><a class="navbar-page" href="checkout.html">Paiement</a></li>
+      </ul>
+
+      <p class="navbar-text date" id="date">Current date</p>
+
+		<h5 class="navbar-text h4 welcome">Connectez-vous pour accéder au contenu</h5>
+      <form id="loginForm" action="/action_page.php">
+        <label class="navbar-text in" for="username">Nom d'utilisateur: </label><br>
+        <input class="login-input in" type="text" id="username" name="username" value=""><br>
+        <label class="navbar-text in" for="password">Mot de passe:</label><br>
+        <input class="login-input in" type="password" id="password" name="password" value=""><br><br>
+        <input class="login-button in" type="button" onclick="validateForm()" value="Se connecter">
+        <input class="login-button out" type="button" onclick="logOut()" value="Se déconnecter">
+		      <button class="login-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">Fermer le menu</button>
+      </form> 
+    </nav>
+  </div>
+</div>
+
+<!-- Barre de navigation (externe) -->
+<nav class="navbar navbar-dark bg-beige">
+  <div class="container-fluid">
+    <button class="navbar-toggler bg-darker-beige" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-darker-beige"></span>
+    </button>
+	  
+	  <img style="width: 200px" src="images/logo_artmonde.png" alt="logo">
+  </div>
+</nav>
+
+
+<!-- Image de fond -->
+<section class="background-image">
+ <div class="image-container">
+	<img src="images/background-main.jpg" alt="image">			 
+</div>
+</section>
+	
+<!-- Section 1 -->
+<section  class="section1">
+	<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="my-5 p-3">
+                <h3 class="display-3">Qui sommes nous?</h3>
+                <p style="font-size: 18px;">Bienvenue à ArtMonde, votre destination en ligne pour découvrir et acquérir des trésors artistiques intemporels. Plongez dans un monde où l'art classique et moderne se rencontrent harmonieusement, offrant une expérience visuelle captivante pour les amateurs d'esthétique. Chez ArtMonde, nous sommes passionnés par la préservation et la célébration de la richesse de l'expression artistique à travers les âges. </p><br>
+				<h3 class="display-5">Notre mission</h3>
+				<p style="font-size: 18px;">
+				Notre mission est de rendre accessible à tous l'héritage culturel et artistique du monde, en mettant en lumière des peintures emblématiques et des collections soigneusement sélectionnées. Explorez notre galerie en ligne pour découvrir des œuvres qui inspirent et émeuvent, et laissez-vous transporter dans un voyage artistique où chaque tableau raconte une histoire unique. Bienvenue dans l'univers envoûtant d'ArtMonde, où l'art trouve sa place dans votre monde.</p>
+				<br>
+				<button id="readMore" class="action-button">En savoir plus</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="my-5 p-2 text-center">
+				<img style="border-top-left-radius: 300px; border-top-right-radius: 300px;" src="images/img-test.gif" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+	
+	
+<!-- Texte de défilement -->
+  <div class="scrolling-wrapper">
+    <div class="horizontal-scrolling-items">
+    <div class="horizontal-scrolling-items__item">
+      Explorez le monde à travers l'art.
+      Découvrez les chefs-d'œuvre classiques et modernes.
+      Voyagez dans le temps et l'espace avec chaque toile.
+      Embellissez votre monde avec des œuvres d'art exceptionnelles.
+      Votre galerie d'art personnelle à portée de clic.
+      Plongez dans l'univers des couleurs, des formes et des émotions.
+      </div>
+  
+    </div>
+  </div>
+
+	
+<!-- Section 2 -->
+<section class="section2">
+		<h3 class="display-3 section-header">Oeuvres les plus populaires</h3> <br>
+		<p style="text-align: center">Glisser pour faire défiler le contenu</p> 
+		
+  <!-- Oeuvres les plus populaires (Swiper) -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/1_anthony-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/2_flowers-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/3_self-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/4_ladydog-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/5_rene-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/6_george-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/7_painters-20.jpg" alt=""/>
+      </div>
+      <div class="swiper-slide">
+        <img onclick="LoginLock()" src="images/art-swiper/9_boulevard-20.jpg" alt=""/>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+ 
+	
+<!-- Collections -->
+<section style="border-top: 1px solid;" class="section3"> 
+<h3  class="display-3 section-header">Explorez les différentes collections</h3>
+		<div class="viewer-container">
+  <div class="box">
+    <img id="image1" src="images/art-hover/impressionism.jpg" width="800" alt="Gaia Gym"/> <span>IMPRESSIONISME</span>
+  </div>
+  <div class="box">
+    <img id="image2" src="images/art-hover/post-impressionism.jpg" width="2250" alt="GQ"/> <span>POST-IMPRESSIONISME</span>
+  </div>
+  <div class="box">
+    <img id="image3" src="images/art-hover/realism.jpg" width="2331"  alt="Soul Festival"/> <span>RÉALISME</span>
+  </div>
+    <div class="box">
+    <img id="image4" src="images/art-hover/renaissance.jpg" width="2331"  alt="Soul Festival"/> <span>RENAISSANCE</span>
+  </div>
+</div> 
+</section>
+	
+<!-- Texte de défilement -->
+  <div class="scrolling-wrapper">
+    <div class="horizontal-scrolling-items horizontal-scrolling-items2">
+  
+    <div class="horizontal-scrolling-items__item">
+      Découvrez l'harmonie dans le chaos avec l'art abstrait. 
+      Explorez l'histoire à travers les pinceaux des maîtres de l'art classique. 
+      Plongez dans les illusions visuelles offertes par l'art surréaliste. 
+      Laissez-vous surprendre par les perspectives uniques de l'art cubiste. 
+      Embarquez pour un voyage émotionnel avec l'art expressionniste.
+      </div>
+    </div>
+  </div>
+	
+<footer class="bg-beige py-5 mt-5">
+	<div class="container text-center">
+	<p class="display-5 mb-3">ArtMonde</p>
+	<small>&copy; Copyright by ArtMonde. All rights reserved</small>
+	</div>
+
+</footer>
+	
+<!-- JavaScript  (JQuery, Swiper JS, Main JS, Login JS) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/index-script.js"></script>
+<script src="js/login-script.js"></script>
+	
+</body>
+</html>
