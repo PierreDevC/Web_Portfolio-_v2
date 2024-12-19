@@ -141,10 +141,12 @@ h3 {
 			color: white;
 			border: none;
 			transition: 0.3s;
+			text-decoration: none;
 		}
 		
 		.action-button:hover {
-			background-color: black;
+			background-color: burlywood;
+			color: white;
 		}
 		
 		.section-header {
